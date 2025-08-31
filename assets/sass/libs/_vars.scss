@@ -1,0 +1,81 @@
+// Misc.
+	$misc: (
+		z-index-base:		10000,
+		header-side:		'right'
+	);
+
+// Duration.
+	$duration: (
+		header:				0.5s,
+		transition:			0.2s
+	);
+
+// Size.
+	$size: (
+		border-radius:		5px,
+		border-width:		2px,
+		element-height:		2.75em,
+		element-margin:		2.25em,
+		container-width:	45em
+	);
+
+// Font.
+	$font: (
+		family:				('Lato', sans-serif),
+		family-fixed:		('Source Code Pro', monospace),
+		weight:				400,
+		weight-bold:		700
+	);
+
+// Palette.
+	$palette: (
+		bg:					#fff, // Used: body background; select option background; default container backgrounds. Present in index.html: body, select option, various sections
+		fg:					#888, // Used: base text color for body, inputs, labels. Present in index.html: page copy, form inputs
+		fg-bold:			#777, // Used: headings and strong text. Present in index.html: h1-h6, strong/b
+		fg-light:			#aaa, // Used: subtle text such as header p and placeholders. Present in index.html: header p, placeholders
+		border:				#f4f4f4, // Used: hr and list alt borders. Present in index.html: <hr>, .alt lists
+		border-bg:			#fafafa, // Used: checkbox/radio pseudo-element backgrounds. Present in index.html: form controls (checkbox/radio)
+		border2:			#e4e4e4, // Used: link underline/border, input/select borders, .box borders, svg fills. Present in index.html: links, inputs, .box
+		border2-bg:			#f4f4f4, // Used: alternate border/backgrounds for form controls. Present in index.html: select option backgrounds, checkbox visuals
+		border3:			#e0e0e0, // Used: additional subtle borders (tables, wrappers). Present in index.html: tables / wrappers
+		border3-bg:			#eaeaea, // Used: subtle background separators. Present in index.html: misc separators
+
+		accent1: (
+			bg:				#4acaa8, // Used: primary accent — link hover color, .button.primary background, input focus/border-color, header background/major headings. Present in index.html: nav links, .button.primary, input focus, #header
+			fg-bold:		#ffffff, // Used: text color when on accent1 backgrounds (buttons, primary actions). Present in index.html: .button.primary, .primary input[type=submit]
+			fg:				mix(#4acaa8, #ffffff, 25%), // Used: lighter text variant on accent backgrounds where needed
+			fg-light:		mix(#4acaa8, #ffffff, 40%) // Used: subtle accent text variant
+		),
+
+		accent2: (
+			bg:				#989898, // Used: secondary accent — checkbox checked background, alternate icon/button backgrounds. Present in index.html: checked inputs, alt icons/buttons
+			fg-bold:		#ffffff, // Used: text on accent2 backgrounds (checked icons). Present in index.html: checked input labels
+			fg:				mix(#989898, #ffffff, 25%),
+			fg-light:		mix(#989898, #ffffff, 40%)
+		),
+
+		header: (
+			bg:				#4acaa8, // Used: #header background and header-major title coloring. Present in index.html: #header
+			fg-bold:		#ffffff, // Used: header text on header bg. Present in index.html: header titles
+			fg:				mix(#4acaa8, #ffffff, 25%),
+			fg-light:		mix(#4acaa8, #ffffff, 40%),
+			border:			mix(#4acaa8, #ffffff, 90%)
+		),
+
+		header-panel:(
+			bg:             #222, // Used: alternative/dark header panels (not used in default index.html)
+			fg:             #fff,
+			title:          #fff
+		),
+
+		footer:(
+			bg:             #fafafa, // Used: footer background. Present in index.html: footer area
+			fg:             #c0c0c0, // Used: footer text color
+			border-left:    #d4d4d4
+		),
+
+		code:(
+			fg: 		    #fff, // Used: inline code/pre text color. Present in index.html: <code> and <pre><code>
+			bg:             #555 // Used: inline code background and pre blocks. Present in index.html: code blocks
+		)
+	);
