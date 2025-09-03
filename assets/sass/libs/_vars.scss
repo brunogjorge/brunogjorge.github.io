@@ -29,6 +29,57 @@
 
 // Palette.
 	$palette: (
+    bg:           #F0F8FF, // Off-White
+    fg:           #5A6872, // Mid-tone of the Dark Grey/Charcoal for base text
+    fg-bold:      #36454F, // Dark Grey/Charcoal for headings
+    fg-light:     #8D9BA6, // Lighter Grey for subtle text
+    border:       #EAEAEA, // Very light grey for subtle borders
+    border-bg:    #F5F5F5, // Almost white for border backgrounds
+    border2:      #E0E0E0, // Light Grey for main borders
+    border2-bg:   #EAEAEA, // Repeats very light grey
+    border3:      #D6D6D6, // Slightly darker grey
+    border3-bg:   #E0E0E0, // Light Grey
+
+    accent1: (
+        bg:       #2F4F8F, // Deep Sapphire Blue
+        fg-bold:  #ffffff,
+        fg:       mix(#2F4F8F, #ffffff, 25%),
+        fg-light: mix(#2F4F8F, #ffffff, 40%)
+    	),
+
+    accent2: (
+        bg:       #C8BBAF, // Cool Beige
+        fg-bold:  #36454F, // Dark Grey/Charcoal for contrast on beige
+        fg:       mix(#C8BBAF, #36454F, 25%),
+        fg-light: mix(#C8BBAF, #36454F, 40%)
+    	),
+
+    header: (
+        bg:       #2F4F8F, // Deep Sapphire Blue
+        fg-bold:  #ffffff,
+        fg:       mix(#2F4F8F, #ffffff, 25%),
+        fg-light: mix(#2F4F8F, #ffffff, 40%),
+        border:   mix(#2F4F8F, #ffffff, 90%)
+    	),
+
+    header-panel:(
+        bg:       #36454F, // Dark Grey/Charcoal
+        fg:       #F0F8FF, // Off-White text
+        title:    #F0F8FF  // Off-White text
+    	),
+
+    footer:(
+        bg:       #F5F5F5, // Very light grey
+        fg:       #8D9BA6, // Lighter Grey text
+        border-left: #E0E0E0
+    	),
+
+    code:(
+        fg:       #F0F8FF, // Off-White text
+        bg:       #36454F  // Dark Grey/Charcoal background
+    	)
+	);
+	$palette_old: (
 		bg:					#fff, // Used: body background; select option background; default container backgrounds. Present in index.html: body, select option, various sections
 		fg:					#888, // Used: base text color for body, inputs, labels. Present in index.html: page copy, form inputs
 		fg-bold:			#777, // Used: headings and strong text. Present in index.html: h1-h6, strong/b
